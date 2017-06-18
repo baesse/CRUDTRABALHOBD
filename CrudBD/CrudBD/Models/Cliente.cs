@@ -30,10 +30,11 @@ namespace CrudBD.Models
         public String nomepai { get; set; }
         public String nomemae { get; set; }
         public DateTime Datacadastro { get; set; }
+        public Endereco cadendereco { get; set; }
 
 
 
-        public Cliente(String Cpf, String Nome, String Sexo, String EstadoCivil, String Profissao, DateTime DataNascimento, String TipoDocumento, String NumeroDocumento, String OrgaoEmissor, String Cep, String Endereco, String Bairro, String Nacionalidade, String Cidade, String Uf, String Pais, String Conjuge, String cpfConjuge, String nomepai, String Nomemae, DateTime Datacadastro)
+        public Cliente(String Cpf, String Nome, String Sexo, String EstadoCivil, String Profissao, DateTime DataNascimento, String TipoDocumento, String NumeroDocumento, String OrgaoEmissor, String Cep, String Bairro, String Nacionalidade, String Cidade, String Uf, String Pais, String Conjuge, String cpfConjuge, String nomepai, String Nomemae, DateTime Datacadastro,Endereco cadendereco)
         {
             this.Cpf = Cpf;
             this.Nome = Nome;
@@ -44,8 +45,7 @@ namespace CrudBD.Models
             this.TipoDocumento = TipoDocumento;
             this.NumeroDocumento = NumeroDocumento;
             this.OrgaoEmissor = OrgaoEmissor;
-            this.Cep = Cep;
-            this.Endereco = Endereco;
+            this.Cep = Cep;        
             this.Bairro = Bairro;
             this.Nacionalidade = Nacionalidade;
             this.Cidade = Cidade;
@@ -56,7 +56,11 @@ namespace CrudBD.Models
             this.nomepai = nomepai;
             this.nomemae = Nomemae;
             this.Datacadastro = Datacadastro;
-
+            this.cadendereco.Bairro = cadendereco.Bairro;
+            this.cadendereco.Cidade = cadendereco.Cidade;
+            this.cadendereco.Pais = cadendereco.Pais;
+            this.cadendereco.uf = cadendereco.uf;
+                     
 
 
         }

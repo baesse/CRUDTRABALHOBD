@@ -25,6 +25,13 @@ namespace CrudBD
                 
 
             };
+
+            Models.Endereco Endereco = new Models.Endereco()
+            {
+                Bairro = txtbairro.Text,
+                Cidade=txtcidade.Text,               
+
+            };
             Cliente.Cpf = Cliente.Cpf.Replace("_", "");
             Cliente= Cliente.BuscarCliente(Cliente);
             Cbbsexo.Text = Cliente.Sexo;
@@ -63,7 +70,20 @@ namespace CrudBD
              nomepai= txtnomepai.Text,
 
              };
-            Cliente.InsertNovoCadastro(Cliente);
+
+        
+
+
+            if(Cliente.Cpf=="" || Cliente.Sexo == ""|| Cliente.Nome == "" || Cliente.EstadoCivil == "" || Cliente.Profissao == "" || Cliente.DataNascimento.Equals(null))
+            {
+                MessageBox.Show("Favor preencher todos os campors obrigatorios","Erro",MessageBoxButtons.OK,MessageBoxIcon.Information);
+
+            }else
+            {
+                Cliente.InsertNovoCadastro(Cliente);
+            }
+
+         
            
 
         }
@@ -89,7 +109,17 @@ namespace CrudBD
                 nomepai = txtnomepai.Text,
 
             };
-            Cliente.UpdateCliente(Cliente);
+
+            if (Cliente.Cpf == "" || Cliente.Sexo == "" || Cliente.Nome == "" || Cliente.EstadoCivil == "" || Cliente.Profissao == "" || Cliente.DataNascimento.Equals(null))
+            {
+                MessageBox.Show("Favor preencher todos os campors obrigatorios", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            else
+            {
+                Cliente.UpdateCliente(Cliente);
+            }
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -113,7 +143,20 @@ namespace CrudBD
                 nomepai = txtnomepai.Text,
 
             };
-            Cliente.DeleteCliente(Cliente);
+
+
+
+            if (Cliente.Cpf == "" || Cliente.Sexo == "" || Cliente.Nome == "" || Cliente.EstadoCivil == "" || Cliente.Profissao == "" || Cliente.DataNascimento.Equals(null))
+            {
+                MessageBox.Show("Favor preencher todos os campors obrigatorios", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            else
+            {
+                Cliente.DeleteCliente(Cliente);
+            }
+
+          
         }
     }
 }

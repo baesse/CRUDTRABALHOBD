@@ -30,16 +30,16 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.txtnomemae = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtnomepai = new System.Windows.Forms.TextBox();
+            this.label35 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtnomeconjuge = new System.Windows.Forms.TextBox();
             this.txtcpfconjuge = new System.Windows.Forms.MaskedTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.txtnomepai = new System.Windows.Forms.TextBox();
-            this.label35 = new System.Windows.Forms.Label();
-            this.txtnomemae = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.txtcidade = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
@@ -56,6 +56,7 @@
             this.txtcep = new System.Windows.Forms.MaskedTextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.txtorgaoemissor = new System.Windows.Forms.TextBox();
             this.txtnumerodocumento = new System.Windows.Forms.TextBox();
             this.txttipodocumento = new System.Windows.Forms.ComboBox();
@@ -79,10 +80,9 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.SuspendLayout();
@@ -97,6 +97,51 @@
             this.groupBox1.TabIndex = 42;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Familia";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.txtnomemae);
+            this.groupBox3.Controls.Add(this.label7);
+            this.groupBox3.Controls.Add(this.txtnomepai);
+            this.groupBox3.Controls.Add(this.label35);
+            this.groupBox3.Location = new System.Drawing.Point(18, 128);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(608, 96);
+            this.groupBox3.TabIndex = 21;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Pai e mãe";
+            // 
+            // txtnomemae
+            // 
+            this.txtnomemae.Location = new System.Drawing.Point(65, 52);
+            this.txtnomemae.Name = "txtnomemae";
+            this.txtnomemae.Size = new System.Drawing.Size(290, 20);
+            this.txtnomemae.TabIndex = 23;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(10, 59);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(58, 13);
+            this.label7.TabIndex = 24;
+            this.label7.Text = "Nome mãe";
+            // 
+            // txtnomepai
+            // 
+            this.txtnomepai.Location = new System.Drawing.Point(65, 26);
+            this.txtnomepai.Name = "txtnomepai";
+            this.txtnomepai.Size = new System.Drawing.Size(290, 20);
+            this.txtnomepai.TabIndex = 19;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(6, 33);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(53, 13);
+            this.label35.TabIndex = 20;
+            this.label35.Text = "Nome Pai";
             // 
             // groupBox2
             // 
@@ -143,51 +188,6 @@
             this.label17.Size = new System.Drawing.Size(76, 13);
             this.label17.TabIndex = 20;
             this.label17.Text = "Nome conjuge";
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.txtnomemae);
-            this.groupBox3.Controls.Add(this.label7);
-            this.groupBox3.Controls.Add(this.txtnomepai);
-            this.groupBox3.Controls.Add(this.label35);
-            this.groupBox3.Location = new System.Drawing.Point(18, 128);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(608, 96);
-            this.groupBox3.TabIndex = 21;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Pai e mãe";
-            // 
-            // txtnomepai
-            // 
-            this.txtnomepai.Location = new System.Drawing.Point(65, 26);
-            this.txtnomepai.Name = "txtnomepai";
-            this.txtnomepai.Size = new System.Drawing.Size(290, 20);
-            this.txtnomepai.TabIndex = 19;
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(6, 33);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(53, 13);
-            this.label35.TabIndex = 20;
-            this.label35.Text = "Nome Pai";
-            // 
-            // txtnomemae
-            // 
-            this.txtnomemae.Location = new System.Drawing.Point(65, 52);
-            this.txtnomemae.Name = "txtnomemae";
-            this.txtnomemae.Size = new System.Drawing.Size(290, 20);
-            this.txtnomemae.TabIndex = 23;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(10, 59);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(58, 13);
-            this.label7.TabIndex = 24;
-            this.label7.Text = "Nome mãe";
             // 
             // groupBox4
             // 
@@ -477,7 +477,7 @@
             "Tocantins (TO)"});
             this.cbbuf.Location = new System.Drawing.Point(265, 90);
             this.cbbuf.Name = "cbbuf";
-            this.cbbuf.Size = new System.Drawing.Size(70, 21);
+            this.cbbuf.Size = new System.Drawing.Size(118, 21);
             this.cbbuf.TabIndex = 67;
             // 
             // label19
@@ -581,6 +581,14 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Dados Cadastrais";
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(123, 171);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(126, 20);
+            this.dateTimePicker1.TabIndex = 72;
+            // 
             // txtorgaoemissor
             // 
             this.txtorgaoemissor.Location = new System.Drawing.Point(128, 260);
@@ -648,6 +656,9 @@
             // Cbbsexo
             // 
             this.Cbbsexo.FormattingEnabled = true;
+            this.Cbbsexo.Items.AddRange(new object[] {
+            "M",
+            "F"});
             this.Cbbsexo.Location = new System.Drawing.Point(231, 19);
             this.Cbbsexo.Name = "Cbbsexo";
             this.Cbbsexo.Size = new System.Drawing.Size(63, 21);
@@ -803,14 +814,6 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(123, 171);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(126, 20);
-            this.dateTimePicker1.TabIndex = 72;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -829,10 +832,10 @@
             this.Name = "Form1";
             this.Text = "Cadastro de Cliente";
             this.groupBox1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox5.ResumeLayout(false);

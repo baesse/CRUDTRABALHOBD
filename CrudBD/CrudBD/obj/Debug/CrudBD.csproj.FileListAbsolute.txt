@@ -1,2 +1,12 @@
 c:\users\igor baesse\documents\visual studio 2015\Projects\CrudBD\CrudBD\bin\Debug\CrudBD.exe.config
 C:\Users\Igor Baesse\Source\Repos\CRUDTRABALHOBD\CrudBD\CrudBD\bin\Debug\CrudBD.exe.config
+C:\REPOSITORIOGIT\CRUDTRABALHOBD\CrudBD\CrudBD\bin\Debug\CrudBD.exe.config
+C:\REPOSITORIOGIT\CRUDTRABALHOBD\CrudBD\CrudBD\bin\Debug\CrudBD.exe
+C:\REPOSITORIOGIT\CRUDTRABALHOBD\CrudBD\CrudBD\bin\Debug\CrudBD.pdb
+C:\REPOSITORIOGIT\CRUDTRABALHOBD\CrudBD\CrudBD\bin\Debug\MySql.Data.dll
+C:\REPOSITORIOGIT\CRUDTRABALHOBD\CrudBD\CrudBD\obj\Debug\CrudBD.csprojResolveAssemblyReference.cache
+C:\REPOSITORIOGIT\CRUDTRABALHOBD\CrudBD\CrudBD\obj\Debug\CrudBD.Form1.resources
+C:\REPOSITORIOGIT\CRUDTRABALHOBD\CrudBD\CrudBD\obj\Debug\CrudBD.Properties.Resources.resources
+C:\REPOSITORIOGIT\CRUDTRABALHOBD\CrudBD\CrudBD\obj\Debug\CrudBD.csproj.GenerateResource.Cache
+C:\REPOSITORIOGIT\CRUDTRABALHOBD\CrudBD\CrudBD\obj\Debug\CrudBD.exe
+C:\REPOSITORIOGIT\CRUDTRABALHOBD\CrudBD\CrudBD\obj\Debug\CrudBD.pdb
