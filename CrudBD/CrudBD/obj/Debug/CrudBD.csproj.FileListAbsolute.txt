@@ -1,0 +1,2 @@
+c:\users\igor baesse\documents\visual studio 2015\Projects\CrudBD\CrudBD\bin\Debug\CrudBD.exe.config
+C:\Users\Igor Baesse\Source\Repos\CRUDTRABALHOBD\CrudBD\CrudBD\bin\Debug\CrudBD.exe.config
